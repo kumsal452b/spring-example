@@ -1,5 +1,7 @@
 package com.kumsalyazilim.Api;
 
+import com.kumsalyazilim.repository.KullaniciRepostory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
@@ -7,6 +9,7 @@ import org.springframework.data.mongodb.repository.config.EnableMongoRepositorie
 @SpringBootApplication
 @EnableMongoRepositories
 public class Application {
+
     public static void main(String[] args) {
         SpringApplication.run(Application.class,args);
     }
